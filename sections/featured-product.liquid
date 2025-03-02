@@ -1,10 +1,10 @@
 {%- liquid
-  assign product = section.settings.product
+    assign product = section.settings.product
   if product == null
     assign placeholder = true
   endif
 -%}
-
+{{ product.title }}
 <product-info
   data-section="{{ section.id }}"
   data-product-id="{{ product.id }}"
