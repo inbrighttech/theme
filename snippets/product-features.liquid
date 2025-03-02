@@ -1,3 +1,4 @@
+Test output.
 {% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}
 {% if features %}
   <ul>
@@ -6,7 +7,5 @@
   {% endfor %}
   </ul>
 {% endif %}
-fghsfhsfhsfh
-
+{{ "Test" }}
 {{ product }}
-{{  "Test" }}
