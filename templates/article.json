@@ -74,7 +74,13 @@
         "custom_amzfeatures": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}{{product.selected_or_first_variant.id }}"
+            "custom_liquid": "{% assign features = product.selected_or_first_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}{{product.title }}"
+          }
+        },
+        "custom_liquid_DffUHw": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{product.title}}"
           }
         }
       },
@@ -83,7 +89,8 @@
         "title_kHCbJb",
         "price_NNrqgw",
         "buy_buttons_hmB9eV",
-        "custom_amzfeatures"
+        "custom_amzfeatures",
+        "custom_liquid_DffUHw"
       ],
       "settings": {
         "product": "{{ article.metafields.global.product_1.value }}",
