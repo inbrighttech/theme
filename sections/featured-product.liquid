@@ -1,11 +1,10 @@
 {%- liquid
-  assign product_handle = section.settings.product
-  assign product = all_products[product_handle]
+  assign product = section.settings.product
   if product == null
     assign placeholder = true
   endif
 -%}
----|{{ product.title }}----------
+
 <product-info
   data-section="{{ section.id }}"
   data-product-id="{{ product.id }}"
@@ -394,8 +393,7 @@
                     section_id: section.id
                   -%}
                 {%- when 'custom_liquid' -%}
-                  {% capture custom_liquid_code %}{{ block.settings.custom_liquid }}{% endcapture %}
-                  {{ custom_liquid_code | liquid }}
+                  {{ block.settings.custom_liquid }}
                 {%- when 'rating' -%}
                   {%- if product.metafields.reviews.rating.value != blank -%}
                     <div class="rating-wrapper">
