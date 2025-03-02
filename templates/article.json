@@ -65,10 +65,7 @@
           "settings": {}
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}{{product.selected_or_first_available_variant.ids }}\n{{product.title}}"
-          }
+          "type": "features"
         },
         "buy_buttons_hmB9eV": {
           "type": "buy_buttons",
@@ -128,10 +125,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -184,10 +178,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -240,10 +231,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -296,10 +284,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -352,10 +337,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -408,10 +390,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -464,10 +443,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -520,10 +496,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
@@ -576,10 +549,7 @@
           }
         },
         "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
-          }
+          "type": "features"
         }
       },
       "block_order": [
