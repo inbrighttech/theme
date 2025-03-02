@@ -1,11 +1,19 @@
 Test output.
+Test b0dh2cslxw
+
+{%- comment -%} Debug product object {%- endcomment -%}
+{{ product | json }}
+
 {% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}
 {% if features %}
   <ul>
-  {% for feature in features %}
-    <li>{{ feature }}</li>
-  {% endfor %}
+    {% for feature in features %}
+      <li>{{ feature }}</li>
+    {% endfor %}
   </ul>
+{% else %}
+  {%- comment -%} No features found {/comment -%}
+  No features available.
 {% endif %}
 {{ "Test" }}
 {{ product }}
