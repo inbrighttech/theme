@@ -74,7 +74,7 @@
         "custom_amzfeatures": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}\n{{product.metafields.amzdata.features}}\ntest"
+            "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}\n{{product.variants.first.metafields.amzdata.features}}\ntest"
           }
         }
       },
