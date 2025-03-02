@@ -1,13 +1,16 @@
+{% assign product_obj = all_products[product] %}
 Test output.
-{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}
+{% assign features = product_obj.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}
 {% if features %}
   <ul>
     {% for feature in features %}
       <li>{{ feature }}</li>
     {% endfor %}
   </ul>
+{% else %}
+  No features available.
 {% endif %}
 {{ "Test" }}
-{{ product }}
-{{ product.title }}
+{{ product_obj }}
+{{ product_obj.title }}
 wrytrwy
