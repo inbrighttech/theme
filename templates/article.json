@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
     "sections": {
         "main": {
@@ -65,7 +74,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -121,7 +130,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -177,7 +186,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -233,7 +242,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -289,7 +298,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -345,7 +354,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -401,7 +410,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -457,7 +466,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -513,7 +522,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
@@ -569,7 +578,7 @@
                 "custom_amzfeatures": {
                     "type": "custom_liquid",
                     "settings": {
-                        "custom_liquid": "{% assign features = product.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
+                        "custom_liquid": "{% assign features = product.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}"
                     }
                 }
             },
