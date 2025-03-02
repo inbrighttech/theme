@@ -393,7 +393,7 @@
                     section_id: section.id
                   -%}
                 {%- when 'custom_liquid' -%}
-                  {{ block.settings.custom_liquid }}
+                  {% render 'custom-liquid', product: product, custom: block.settings.custom_liquid %}
                 {%- when 'rating' -%}
                   {%- if product.metafields.reviews.rating.value != blank -%}
                     <div class="rating-wrapper">
