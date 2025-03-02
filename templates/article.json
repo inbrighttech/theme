@@ -64,17 +64,17 @@
           "type": "price",
           "settings": {}
         },
+        "custom_amzfeatures": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% assign features = product.selected_or_first_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}{{product.selected_or_first_variant.ids }}\n{{product}}"
+          }
+        },
         "buy_buttons_hmB9eV": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
-          }
-        },
-        "custom_amzfeatures": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% assign features = product.selected_or_first_variant.metafields.amzdata.features | parse_json %}\n{% if features %}\n  <ul>\n  {% for feature in features %}\n    <li>{{ feature }}</li>\n  {% endfor %}\n  </ul>\n{% endif %}{{product.selected_or_first_variant.ids }}\n{{product.title}}"
           }
         }
       },
@@ -82,8 +82,8 @@
         "text_dNYeyP",
         "title_kHCbJb",
         "price_NNrqgw",
-        "buy_buttons_hmB9eV",
-        "custom_amzfeatures"
+        "custom_amzfeatures",
+        "buy_buttons_hmB9eV"
       ],
       "settings": {
         "product": "{{ article.metafields.global.product_1.value }}",
