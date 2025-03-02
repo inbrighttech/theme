@@ -394,7 +394,7 @@
                   -%}
                 {%- when 'custom_liquid' -%}
                   {% capture custom_liquid_code %}{{ block.settings.custom_liquid }}{% endcapture %}
-                  {{ custom_liquid_code | liquid }}
+                  000|{{ custom_liquid_code | liquid }}|0000
                 {%- when 'rating' -%}
                   {%- if product.metafields.reviews.rating.value != blank -%}
                     <div class="rating-wrapper">
