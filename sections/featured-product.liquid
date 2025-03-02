@@ -1,5 +1,6 @@
 {%- liquid
-    assign product = section.settings.product
+  assign product_handle = section.settings.product
+  assign product = all_products[product_handle]
   if product == null
     assign placeholder = true
   endif
