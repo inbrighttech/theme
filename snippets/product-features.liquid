@@ -1,18 +1,12 @@
 {% assign product_obj = all_products[product] %}
-{% assign testFeatures = '["【Active Noise Canceling Headphones】 ANC will turn on automatically while power on the noise canceling headphones...", "【Hi-Fi Music】Our bluetooth headphones noise canceling adopts exclusive Bass Up technology...", "【All-day Comfort】Pointcinco P1 wireless over ear headphones can be worn all day...", "【60-Hours Playtime】Up to 60 hours of non-stop playtime in wireless active noise cancellation mode...", "【Built-in Mic】Our over the ear noise canceling headphones with microphone pick up your voice with incredible accuracy..."]' | parse_json %}
-Test output.
-<ul>
-  {% for feature in testFeatures %}
-    <li>{{ feature }}</li>
-  {% endfor %}
-</ul>
 
 {%- comment -%}
-At this point, if the above list is rendered correctly, your loop logic is fine. Compare the hardcoded output with:
-Raw features: {{ product_obj.selected_or_first_available_variant.metafields.amzdata.features }}
+Output raw metafield (for debugging)
 {%- endcomment -%}
+Raw features: {{ product_obj.selected_or_first_available_variant.metafields.amzdata.features }}
 
-{% assign features = product_obj.selected_or_first_available_variant.metafields.amzdata.features | parse_json %}
+{% assign features = product_obj.selected_or_first_available_variant.metafields.amzdata.features %}
+
 {% if features and features.size > 0 %}
   <ul>
     {% for feature in features %}
@@ -20,8 +14,9 @@ Raw features: {{ product_obj.selected_or_first_available_variant.metafields.amzd
     {% endfor %}
   </ul>
 {% else %}
-  No features available.
+  <p>No features available.</p>
 {% endif %}
-{{ "Test" }}
-{{ product_obj.title }}
-wrytrwy
+
+<p>Test</p>
+<p>{{ product_obj.title }}</p>
+<p>wrytrwy</p>
