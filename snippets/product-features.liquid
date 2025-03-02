@@ -1,11 +1,15 @@
 {% assign product_obj = all_products[product] %}
 
 {%- comment -%}
-Output raw metafield (for debugging)
+  Debug: Output raw metafield
 {%- endcomment -%}
 Raw features: {{ product_obj.selected_or_first_available_variant.metafields.amzdata.features }}
 
-{% assign features = product_obj.selected_or_first_available_variant.metafields.amzdata.features %}
+{%- comment -%}
+  Strip any extra whitespace and parse the JSON string into an array.
+{%- endcomment -%}
+{% assign raw_features = product_obj.selected_or_first_available_variant.metafields.amzdata.features | strip %}
+{% assign features = raw_features | parse_json %}
 
 {% if features and features.size > 0 %}
   <ul>
