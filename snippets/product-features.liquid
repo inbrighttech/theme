@@ -1,20 +1,14 @@
 {% assign product_obj = all_products[product] %}
 
 {%- comment -%}
-  Debug: Output raw metafield value
+  Debug: Output raw metafield value (should look like an array)
 {%- endcomment -%}
 Raw features: {{ product_obj.selected_or_first_available_variant.metafields.amzdata.features }}
 
 {%- comment -%}
-  Remove extra newlines and whitespace, then parse the JSON string.
+  Use the metafield directly since it’s already an array.
 {%- endcomment -%}
-{% assign raw_features = product_obj.selected_or_first_available_variant.metafields.amzdata.features | strip_newlines | strip %}
-{% assign features = raw_features | parse_json %}
-
-{%- comment -%}
-  Debug: Check the size of the parsed array.
-{%- endcomment -%}
-Parsed features size: {{ features.size }}
+{% assign features = product_obj.selected_or_first_available_variant.metafields.amzdata.features %}
 
 {% if features and features.size > 0 %}
   <ul>
