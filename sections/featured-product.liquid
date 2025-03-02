@@ -393,7 +393,9 @@
                     section_id: section.id
                   -%}
                 {%- when 'custom_liquid' -%}
-                  {% render 'custom-liquid', product: product, custom: block.settings.custom_liquid %}
+                  {{ block.settings.custom_liquid }}
+                {%- when 'features' -%}
+                  {% render 'product-features', product: product %}
                 {%- when 'rating' -%}
                   {%- if product.metafields.reviews.rating.value != blank -%}
                     <div class="rating-wrapper">
@@ -700,6 +702,10 @@
           "info": "t:sections.custom-liquid.settings.custom_liquid.info"
         }
       ]
+    },
+    {
+      "type": "features",
+      "name": "Product Features"
     },
     {
       "type": "rating",
